@@ -1,14 +1,13 @@
 "use client";
 import React from "react";
 import Search from "./Search";
-import { FaGithubSquare } from "react-icons/fa"; 
+import { FaGithubSquare } from "react-icons/fa";
 import {
   Navbar,
   NavbarBrand,
   NavbarContent,
   NavbarItem,
   Link,
-  Button,
 } from "@nextui-org/react";
 const Nav = () => {
   return (
@@ -19,7 +18,9 @@ const Nav = () => {
         </p>
       </NavbarBrand>
       <NavbarContent justify="end">
-        <FaGithubSquare size={35}/>
+        <Link color="foreground" href="https://github.com/jasper1902/nextjs-image-gallery">
+          <FaGithubSquare size={35} />
+        </Link>
         <NavbarItem>
           <Search />
         </NavbarItem>
