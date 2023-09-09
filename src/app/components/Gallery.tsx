@@ -33,7 +33,7 @@ export default async function Gallery({ topic = "curated", page }: Props) {
   const { total_results, per_page } = images;
   const totalPages =
     total_results % per_page
-      ? Math.ceil(total_results / per_page)
+      ? Math.round(total_results / per_page)
       : total_results / per_page + 1;
 
   return (
